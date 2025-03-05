@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* header start */
+.header {
+	background-color: rgb(255, 255, 255);
+	overflow: hidden;
+}
+
+/* logo start */
+
+.logo .logo_h {
+	display: block;
+	margin-top: 7px;
+	float: left;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 100px;
+	color: black;
+}
+
+.logo .logo_h i {
+	background-color: rgb(165, 196, 34);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+/* logo end */
+
+/* nav start */
+.nav {
+	float: right;
+	margin-right: 50px;
+}
+
+.nav ul {
+	list-style-type: none;
+	margin: 20px;
+	display: flex;
+	margin-right: 100px;
+}
+
+.nav ul li {
+	padding-left: 50px;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	font-size: 18px;
+	color: black;
+	padding: 10px;
+}
+
+.nav ul li a:hover {
+	background-color: rgb(165, 196, 34);
+	color: white;
+	border-radius: 10px;
+}
+
+/* nav end */
+
+/* header start */
+
+#carouselExample {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	background-color: rgba(20, 20, 20, 0.2);
+	height: 720px;
+	color: #fff;
+}
+
+/* img_scroll  start*/
+.img-scroll {
+	background: url('img/slider3.jpg');
+	width: 100%;
+	height: 780px;
+	background-size: cover;
+	background-attachment: scroll;
+	text-align: center;
+	/*	margin-top: 50px;*/
+}
+
+.img-scroll p {
+	padding-top: 17%;
+	letter-spacing: 3px;
+}
+
+.img-scroll h2 {
+	padding-top: 27px;
+	font-size: 50px;
+}
+
+.img-scroll a {
+	margin-top: 50px;
+	display: block;
+}
+
+.img-scroll .button-read button {
+	padding: 15px;
+	border-radius: 10px;
+	font-size: 20px;
+}
+
+.img-scroll .button-read button:hover {
+	background-color: rgb(165, 196, 34);
+	border: none;
+	color: white;
+}
+
+/* img_scroll  end*/
+
+/* img-fix start */
+.img-fix {
+	background: url('img/docter.jpg');
+	width: 100%;
+	height: 750px;
+	background-size: cover;
+	background-attachment: scroll;
+}
+
+.img-fix .para {
+	padding-top: 222px;
+	padding-left: 220px;
+}
+
+.img-fix .para01 {
+	font-size: 55px;
+	width: 720px;
+}
+
+.img-fix .para02,
+.para03 {
+	width: 620px;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.img-fix .para04 {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.img-fix .para05 {
+	float: left;
+	color: rgba(0, 0, 0, 1);
+	padding-bottom: 45px;
+	font-size: 17px;
+}
+
+.img-fix .para04 span {
+	font-size: 17px;
+	font-weight: normal;
+}
+
+/* img-fix end */

@@ -1,0 +1,242 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(224, 212, 138);
+	margin: 0px auto;
+	width: 70%;
+}
+
+.header {
+	height: 230px;
+	background-color: rgb(187, 217, 44);
+	margin-top: 20px;
+}
+
+.text {
+	position: absolute;
+	margin-top: 70px;
+	margin-left: 650px;
+}
+
+.text h1 {
+	font-size: 40px;
+}
+
+.text p {
+	font-size: 24px;
+}
+
+/* main_home start */
+.main_home {
+	background-color: rgb(243, 234, 201);
+}
+
+.navbar {
+	margin-top: 5px;
+	border-top: 1px solid rgba(74, 64, 62, 0.7);
+	border-left: 1px solid rgba(74, 64, 62, 0.7);
+	border-right: 1px solid rgba(74, 64, 62, 0.7);
+}
+
+.navbar ul {
+	list-style-type: none;
+}
+
+.navbar ul li {
+	display: inline-block;
+	margin: 15px 50px;
+}
+
+.navbar ul li a {
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+}
+
+.navbar ul li a:hover {
+	text-decoration: underline;
+}
+
+/* main_home end */
+
+/* main menu start */
+.main_menu {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+/* main menu end */
+/* mian item start */
+.main_item {
+	width: 25%;
+	border-right: 1px solid rgba(112, 83, 53, 0.4);
+	margin-top: 5px;
+}
+
+/*main_menu01 start*/
+.main_menu01 {
+	width: 200%;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.main_menu01 .main_menu01_heading {
+	background-color: rgb(210, 210, 95);
+	display: inline-block;
+	padding: 10px 25px;
+	font-size: 20px;
+	width: 205px;
+	margin-bottom: 10px;
+}
+
+.main_menu01 h2 i {
+	margin-right: 10px;
+}
+
+.main_menu01 ul {
+	display: block;
+	width: 25%;
+	list-style-type: none;
+	margin: 15px 20px;
+}
+
+.main_menu01 ul li {
+	font-size: 15px;
+	margin-top: 15px;
+}
+
+.main_menu01 ul li a {
+	color: black;
+}
+
+.main_menu01 ul li a i {
+	margin-right: 15px;
+}
+
+/*main_menu01 end*/
+
+/* main_menu02 strat */
+.main_menu02 {
+	width: 70%;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.main_menu02 .main_menu02_heading {
+	background-color: rgb(210, 211, 94);
+	display: inline-block;
+	padding: 10px 25px;
+	font-size: 20px;
+	margin-top: 25px;
+	width: 205px;
+	margin-bottom: 10px;
+}
+
+.main_menu02 h2 i {
+	margin-right: 10px;
+}
+
+.main_menu02 .main_menu02_para01 {
+	margin: 10px 0px;
+
+}
+
+.main_menu02 .main_menu02_para02 {
+	margin: 15px 0px;
+	text-align: start;
+}
+
+/* main_menu02 end */
+
+/* mian item end */
+
+/* gallery_main strat */
+.gallery_main {
+	float: left;
+	width: 75%;
+	margin: 55px 25px;
+	/*	text-align: justify;*/
+}
+
+.gallery h2 {
+	font-size: 25px;
+}
+
+.gallery p {
+	margin-top: 20px;
+	font-size: 17px;
+}
+
+/* gallery_main end */
+/* gallery_main01 start */
+.gallery_main01 {
+	position: absolute;
+	float: left;
+	margin: 30px 0px;
+}
+
+/* gallery_main01 end */
+/* gallery_subsscription strat */
+.gallery_subsscription {
+	float: left;
+	width: 37%;
+	margin-top: 45px;
+	position: relative;
+	margin-right: 15px;
+	border-right: 1px solid rgba(112, 83, 53, 0.4);
+}
+
+.gallery_subsscription h2 {
+	margin-bottom: 15px;
+	font-size: 25px;
+}
+
+.gallery_subsscription button {
+	margin-top: 20px;
+	padding: 10px;
+	background-color: rgb(188, 218, 46);
+}
+
+/* gallery_subsscription end */
+
+/* gallery_services strat */
+.gallery_services {
+	position: relative;
+	float: left;
+	width: 37%;
+	margin-left: 15px;
+	margin-top: 45px;
+}
+
+.gallery_services h2 {
+	margin-bottom: 15px;
+	font-size: 25px;
+}
+
+.gallery_services button {
+	margin-top: 20px;
+	padding: 10px;
+	background-color: rgb(188, 218, 46);
+}
+
+/* gallery_services end */
+
+/* footer start */
+.footer {
+	background-color: rgb(188, 218, 46);
+	margin: 50px 15px;
+	padding: 15px;
+	position: relative;
+}
+
+.footer p {
+	text-align: center;
+	font-size: 20px;
+}
+
+/* footer end */

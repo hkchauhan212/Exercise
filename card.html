@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>card</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" >
+	<style type="text/css">
+		.card-hover{
+			margin-left: -30px;
+			margin-bottom: -30px;
+			border-radius: 50%;
+		  	width: 80px;
+		  	height: 80px;
+		  	z-index: -1;
+		  	background: red;
+		  	transition: width 2s, height 2s, transform 2s;
+		}
+
+		.card-hover:hover {
+	  		scale: 1.2;
+	  		border-radius: 27px 0px 27px 0px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="card border-0" style="width: 22rem;">
+				<img class="card-img-top" src="images/dest2.jpg">
+				<div class="card-header ps-0">
+					<p class="card-title">Chauhan H.K</p>
+				</div>
+				<div class="card-body ps-0">
+					<p class="card-title">Lorem</p>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div class="footer">
+					<p class="card-text">consectetur adipisicing</p>
+				</div>
+				<div class="card-hover"></div>
+			</div>
+		</div>
+	</div>
+
+
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

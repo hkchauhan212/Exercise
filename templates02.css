@@ -1,0 +1,216 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* body strat */
+body {
+	/*	background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);*/
+	background-color: #77E4C8;
+}
+
+/* body end */
+
+/* main start */
+.main {
+	height: 100%;
+}
+
+/* main end */
+
+/* navbar start */
+.navbar {
+	height: 67px;
+	/*	background-image: radial-gradient(black, gray);*/
+	background-color: #478CCF;
+	display: flex;
+}
+
+/* logo start */
+.logo {
+	margin-top: 10px;
+	display: block;
+	display: flex;
+}
+
+.logo i {
+	margin: 20px 10px 0px 80px;
+}
+
+.logo h2 {
+	margin-top: 11px;
+	color: white;
+	font-size: 25px;
+}
+
+/* logo end */
+
+/* nav start */
+.nav {
+	display: block;
+	margin-left: 600px;
+	margin-top: 15px;
+	float: right;
+}
+
+.nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 10px;
+}
+
+.nav ul li {
+	float: left;
+	margin-left: 20px;
+}
+
+.nav ul li a {
+	margin-left: 10px;
+	text-decoration: none;
+	color: white;
+	font-size: 17px;
+	letter-spacing: 3px;
+	padding: 10px;
+}
+
+.nav ul li a:hover {
+	background-color: #36C2CE;
+	color: white;
+	border-radius: 10px;
+}
+
+/* nav end */
+/* navbar end */
+
+/*  content start */
+.content {
+	margin: 50px 0px;
+	text-align: center;
+}
+
+.content .para01 {
+	font-size: 38px;
+	margin-bottom: 12px;
+	letter-spacing: 1.5px;
+	color: rgba(0, 0, 0, 0.9);
+}
+
+.content .para01 span {
+	font-size: 40px;
+	font-weight: bolder;
+}
+
+.content .para02 {
+	margin-top: 15px;
+	font-size: 17px;
+	letter-spacing: 1px;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.content .para03 {
+	padding-top: 5px;
+	font-size: 17px;
+	letter-spacing: 1px;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+/*  content end */
+/* card strat */
+.card {
+	padding: 10px 50px;
+	display: flex;
+}
+
+.cards {
+	border: 1px solid white;
+	background-color: rgba(255, 255, 255, 0.7);
+	height: 370px;
+	overflow: auto;
+}
+
+.cards i {
+	margin-top: 22px;
+	margin-bottom: 15px;
+	cursor: grab;
+}
+
+.cards p {
+	font-size: 22px;
+	margin-top: 10px;
+}
+
+.cards .para {
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.cards .uper {
+	margin-top: 25px;
+}
+
+.cards .heading {
+	font-weight: bold;
+	font-size: 27px;
+
+}
+
+.card01 {
+	float: left;
+	width: 31%;
+	border-radius: 10px;
+	margin-left: 20px;
+	text-align: center;
+	font-size: 37px;
+}
+
+
+.card02 {
+	float: left;
+	width: 31%;
+	border-radius: 10px;
+	margin-left: 20px;
+	text-align: center;
+	font-size: 37px;
+}
+
+.card03 {
+	width: 31%;
+	margin-left: 20px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.card03 button {
+	width: 200px;
+	/*	margin-top: 50px;*/
+	margin: 25px 110px;
+	font-size: 22px;
+	border-radius: 20px;
+	cursor: grab;
+}
+
+.card03 button i {
+	margin-right: 15px;
+	font-size: 30px;
+}
+
+.card03 button a {
+	text-decoration: none;
+}
+
+/* card end */
+
+/* footer start */
+.footer {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	padding: 12px 0px;
+	text-align: center;
+	background-color: #478CCF;
+	color: white;
+	font-size: 18px;
+}
+
+/* footer end */

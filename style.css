@@ -1,0 +1,25 @@
+.signup:hover {
+    color: white !important;
+}
+
+.navvbar-page:hover {
+    text-decoration: underline;
+    color: orange !important;
+}
+
+.hero-title {
+    font-size: 5rem;
+    width: 34rem;
+}
+
+.catagory {
+    margin-top: 171px;
+}
+
+.destination-card:hover {
+    color: orange !important;
+}
+
+.icon-bar {
+    border-radius: 20px !important;
+}
