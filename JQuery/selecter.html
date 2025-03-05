@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Select box</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 mt-5 p-5 mx-auto" id="selectBox1Container">
+				<label for="selectBox1" class="form-label">Choose an Option</label>
+                <select class="form-select" id="selectBox1">
+                    <option value="1">TATA</option>
+                    <option value="2">Maruti Suzuki</option>
+                    <option value="3">Mahindra</option>
+                    <option value="4">Toyota</option>
+                </select>
+			</div>
+			<div class="col-lg-6 d-none mt-5 p-5 mx-auto" id="selectBox2Container">
+                <label for="selectBox2" class="form-label">Maruti Suzuki</label>
+                <select class="form-select" id="selectBox2">
+                    <option value="1">Brezza</option>
+                    <option value="2">Ertiga</option>
+                    <option value="3">Swift</option>
+                    <option value="4">Baleno</option>
+                </select>
+			</div>
+			<div class="col-lg-6 d-none mt-5 p-5 mx-auto" id="selectBox3Container">
+                <label for="selectBox3" class="form-label">Mahindra</label>
+                <select class="form-select" id="selectBox3">
+                    <option value="1">Thar</option>
+                    <option value="2">Scorpio</option>
+                    <option value="3">SUV700</option>
+                    <option value="4">Be 6</option>
+                </select>
+			</div>
+		</div>
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#selectBox1").on("change", function(){
+			var selectedValue = $(this).val();
+
+			$("#selectBox2Container").addClass('d-none');
+			$("#selectBox3Container").addClass('d-none');
+
+			if(selectedValue === '2'){
+				$("#selectBox2Container").removeClass('d-none');	
+			}else if(selectedValue === '3'){
+				$("#selectBox3Container").removeClass('d-none');	
+			}
+		});
+	});
+</script>
+</body>
+</html>
