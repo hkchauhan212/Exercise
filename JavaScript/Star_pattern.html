@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Star Pattern in JS</title>
+</head>
+<body>
+
+	<h2>1. Square Star Pattern in Javascript</h2>
+	<p id="demo01"></p>
+	<br><hr>
+
+	<h2>2. Hollow Square Pattern</h2>
+	<p id="demo02"></p>
+	<br><hr>
+
+	<h2>3. Right Triangle Pattern in Javascript</h2>
+	<p id="demo03"></p>
+	<br><hr>
+
+	<h2>4. Downward Triangle Star Pattern</h2>
+	<p id="demo04"></p>
+	<br><hr>
+
+	<h2>5. Javascript Pyramid Pattern</h2>
+	<p id="demo05"></p>
+	<br><hr>
+
+	<h2>6. Diamond Pattern in Javascript</h2>
+	<p id="demo06"></p>
+	<br><hr>
+
+
+<script>
+	// demo01
+	let n = 5;
+	let string01 = "";
+	for (let i = 0; i < n; i++){
+		for (let j = 0; j <= n; j++) {
+			string01 += "*";
+		}
+		string01 += "<br>";
+	}
+	document.getElementById("demo01").innerHTML = string01;
+
+	// demo02
+	let a = 5;
+	let string02 = "";
+
+	for (let b = 0; b < a; b++) {
+		for (let c = 0; c < a; c++){
+			if (b === 0 || b === a - 1) {
+				string02 += "*";
+			}else{
+				if (c === 0 || c === a - 1) {
+					string02 += "*";
+				}else {
+					string02 += "&nbsp; ";
+				}
+			}
+		}
+		string02 += "<br>"
+	}
+	document.getElementById("demo02").innerHTML = string02;
+
+	// demo03
+	let d = 5;
+	let string03 = "";
+	for (let e = 0; e < d; e++){
+		for(let f = 0; f <= e; f++){
+			string03 += "*";
+		}
+		string03 += "<br>";
+	}
+	document.getElementById("demo03").innerHTML = string03;
+
+	
+	demo04
+	let k = 5;
+	let string04 = "";
+	for(let l = 0; l < k; l++){
+		for(let m = 0; m < k - l; m++){
+			string04 += "*";
+		}
+		string04 += "<br>"
+	}
+	document.getElementById("demo04").innerHTML = string04;
+
+	// demo05
+	let Xnumber = 5;
+	let string05 = "";
+	for (let Inumber = 1; Inumber <= Xnumber; Inumber++){
+		for (Jnumber = 0; Jnumber <= Xnumber - 1; Jnumber++){
+			string05 += "";
+		}
+		for (let Knumber = 0; Knumber < 2 * Inumber - 1; Knumber++){
+			string05 += "*";
+		}
+			string05 += "<br>";
+	}
+	document.getElementById("demo05").innerHTML = string05;
+
+
+
+
+	// demo06
+	let na = 7;	
+	let string06 = "";
+
+	for (let ia = 1; ia <= na; ia++) {
+		for(let ja = 1; ja > na; ja--){
+			string06 += " ";
+		}for (let ka = 0; ka < ia * 2 - 1; ka++){
+			string06 += "*";
+		}
+		string06 += "<br>"
+	}
+	for (let ia = 1; ia <= na - 1; ia++) {
+		for(let ja = 0; ja < na; ja++){
+			string06 += " ";
+		}for (let ka = (na - ia) * 2 - 1; ka > 0; ka--){
+			string06 += "*";
+		}
+		string06 += "<br>"
+	}
+	document.getElementById("demo06").innerHTML = string06;
+
+</script>
+</body>
+</html>

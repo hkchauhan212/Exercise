@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simple All JavaScript</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="Simple_all_js.css">
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+		box-sizing: border-box;
+	}
+
+	.form-back{
+		background-image: linear-gradient(to right, rgba(255, 153, 51, 0.9), rgba(230, 230, 230, 0.7) ,rgba(0, 204, 102, 0.9));
+	}
+
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+		<!-- form 01 -->
+		<h3 class="display-5 mb-5">Addition :</h3>
+		<div class="row">
+			<form>
+				<div class="col-lg-9 mx-auto">
+					<div class="row">
+						<div class="col-lg-3">
+							<input type="Number" class="form-control" id="Fnumber" placeholder="First Number">
+						</div>
+						<div class="col-lg-1">
+							<span><i class="fa-solid fa-plus"></i></span>
+						</div>
+						<div class="col-lg-3">
+							<input type="Number" class="form-control" id="Snumber" placeholder="Second Number">
+						</div>
+						<div class="col-lg-1">
+							<span><i class="fa-solid fa-equals"></i></span>
+						</div>
+						<div class="col-lg-2">
+							<button type="button" onclick="myFunction()" class="btn btn-primary mb-3">Addition</button>
+						</div>
+						<div class="col-lg-2">
+							<input type="Number" class="form-control" id="Result" placeholder="Number">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- form 02 -->
+		<h3 class="display-5 my-5">Arithmetic :</h3>
+		<form class="row">
+			<div class="col-lg-9 mx-auto">
+				<div class="row">
+					<div class="col-lg-3">
+						<input type="Number" class="form-control" id="Fnumber01" placeholder="First Number">
+					</div>
+					<div class="col-lg-1">
+						<select class="form-select hengu-pengu border-0 form-select-sm">
+							<option value="1">+</option>
+							<option value="2">-</option>
+							<option value="3">*</option>
+							<option value="4">/</option>
+						</select>
+					</div>
+					<div class="col-lg-3">
+						<input type="Number" class="form-control" id="Snumber01" placeholder="Second Number">
+					</div>
+					<div class="col-lg-1">
+						<span><i class="fa-solid fa-equals"></i></span>
+					</div>
+					<div class="col-lg-2">
+						<!-- <button type="button" onclick="myFunction07()" class="btn btn-primary mb-3" id="operationButton">Answer</button> -->
+						<button type="button" onclick="myFunction07()" class="btn btn-primary mb-3" id="operationButton">Calculate</button>
+					</div>
+					<div class="col-lg-2">
+						<input type="Number" class="form-control" id="Result07">
+					</div>
+				</div>
+			</div>
+		</form>
+		<br>
+		<hr><br>
+
+		<div class="row">
+			<button onclick="myFunction11()" class="col-lg-2 btn-outline-primary">current time</button>
+			<p id="demo01" class="col-lg-5 mx-auto"></p>
+		</div>
+		<br>
+		<hr><br>
+
+		<h1 style="text-decoration: underline overline;">HTML Event</h2>
+		<div class="row">
+			<p class="fs-2">Select Your favorite car</p>
+			<select id="mySelect" onchange="myFunction15()" class="col-lg-2">
+				<option value="Mercedes">Mercedes</option>
+				<option value="Volvo">Volvo</option>
+				<option value="Mustang GT">Mustang GT</option>
+				<option value="Audi">Audi</option>
+				<option value="Harrier">Harrier</option>
+			</select>
+			<p id="demo05" class="col-lg-4 fs-3 mx-auto"></p>
+		</div>
+		<br>
+		<hr><br>
+
+		<div class="row">
+			<div class="col-lg-7">
+				<label for="fullName" class="fs-3 mb-3">Enter your name </label>
+				<!-- <input type="text" class="form-control" id="fullName" oninput="upperCase()" placeholder="Translate Uppercase"> -->
+				<input type="text" class="form-control" id="fullName" onchange="upperCase()" placeholder="Translate Uppercase">
+			</div>
+		</div>
+		<br>
+		<hr><br>
+
+		<div class="row">
+			<form class="row">
+				<div class="col-lg-9 ">
+					<div class="row">
+						<div class="col-lg-3">
+							<input type="number" class="form-control" id="Cnumber" placeholder="Your Choice one Number">
+						</div>
+						<div class="col-lg-2">
+							<button type="button" onclick="myFunction13()"
+								class="btn btn-primary mb-3">Calculate</button>
+						</div>
+						<div class="col-lg-4">
+							<input type="text" class="form-control" id="Result11">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<br>
+		<hr><br>
+
+		<div class="row">
+			<form class="row">
+				<div class="col-lg-3">
+					<input type="number" class="form-control" max="100" id="Anumber" placeholder="Your Choice Number">
+				</div>
+				<div class="col-lg-2">
+					<button type="button" onclick="myFunction21()" class="btn btn-primary mb-3">Your Number</button>
+				</div>
+				<div class="col-lg-7">
+					<p id="Result101" style=" width: 100%; height: 120px; border: 2px solid black; overflow: auto;"></p>
+				</div>
+			</form>
+		</div>
+		<br>
+		<hr><br>
+
+		<div class="row">
+			<div class="col">
+				<form class="form-back mt-3 p-5">
+					<div class="row gy-5 position-relative">
+						<div class="col-lg-6">
+							<label for="name" class="form-label">Name : </label>
+							<input type="text" class="form-control" id="name" placeholder="Enter your name">
+							<small id="nameerror" class="form-text text-danger"></small>
+						</div>
+						<div class="col-lg-6">
+							<label for="Email" class="form-label">Email id:</label>
+							<input type="Email" name="Email" id="Email" class="form-control" placeholder="abc@gmail.com">
+							<small id="Emailerror" class="form-text text-danger"></small>
+						</div>
+						<div class="col-lg-6">
+							<label for="password" class="form-label">Password : </label>
+							<input type="password" class="form-control" id="password" placeholder="Abc@123.">
+							<small id="passworderror" class="form-text text-danger"></small>
+						</div>
+						<div class="col-lg-12 text-center">
+							<input type="button" id="pass" class="btn btn-outline-primary" onclick="Fsubmit()" value="Submit">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="row pt-4">	
+			<div class="col-lg-4">
+				<P id="demo011"></P>	
+			</div>
+			<div class="col-lg-4">
+				<P id="demo012"></P>	
+			</div>
+			<div class="col-lg-4">
+				<P id="demo013"></P>	
+			</div>
+		</div>
+	</div>
+
+<script>
+	// demo01
+	function myFunction() {
+		var x = document.getElementById("Fnumber").value;
+		var y = document.getElementById("Snumber").value;
+
+		var result = Number(x) + Number(y);
+
+		document.getElementById("Result").value = result;
+	}
+
+
+	// demo02
+	function myFunction07() {
+		const firstNumber = parseInt(document.getElementById("Fnumber01").value);
+		const secondNumber = parseInt(document.getElementById("Snumber01").value);
+		const operator = document.querySelector('.hengu-pengu').value;
+		let result07;
+
+		switch (parseInt(operator)) {
+			case 1:
+				result07 = firstNumber + secondNumber;
+				break;
+			case 2:
+				result07 = firstNumber - secondNumber;
+				break;
+			case 3:
+				result07 = firstNumber * secondNumber;
+				break;
+			case 4:
+				if (secondNumber === 0) {
+					alert("This is not valid '0'");
+					return;
+				}
+				result07 = firstNumber / secondNumber;
+				break;
+			default:
+				alert("Invalid operator selected!");
+				return;
+		}
+		document.getElementById('Result07').value = result07;
+	}
+
+	// demo01	
+
+	function myFunction11() {
+		document.getElementById("demo01").innerHTML = new Date();
+	}
+
+	// demo03
+
+	function myFunction15() {
+		var d = document.getElementById("mySelect").value;
+		document.getElementById("demo05").innerHTML = "your dream car is : " + d;
+	}
+
+	// demo
+	function upperCase() {
+		const q = document.getElementById("fullName");
+		q.value = q.value.toUpperCase();
+	}
+
+	// demo04
+	function myFunction13() {
+		let choishNumber = document.getElementById("Cnumber").value;
+
+		if (choishNumber % 2 == 0) {
+			document.getElementById("Result11").value = "This Number is Even ";
+		} else {
+			document.getElementById("Result11").value = "This Number is Odd ";
+		}
+	}
+
+	// demo03
+	function myFunction21() {
+		let chooseNumber = document.getElementById("Anumber").value;
+		let result77 = "";
+		for (let s = 1; s <= chooseNumber; s++) {
+			result77 += "The Number is " + s + "\n" + "<br>";
+		}
+		document.getElementById("Result101").innerHTML = result77;
+	}
+
+	// Main Pro
+	function Fsubmit() {
+
+		let name = document.getElementById("name").value;
+		let email = document.getElementById("Email").value;
+		let password = document.getElementById("password").value;
+
+		if (name == "") {
+			document.getElementById("nameerror").innerHTML = "Please enter your name!";
+		} else {
+			document.getElementById("nameerror").innerHTML = "";
+		}
+
+		if (email == "") {
+			document.getElementById("Emailerror").innerHTML = "Please enter an email!";
+
+		} else if (email.includes('@gmail.com')) {
+			document.getElementById("Emailerror").innerHTML = "";
+		} else if (email != email.includes('@gmail.com')) {
+			document.getElementById("Emailerror").innerHTML = "missing in @gmail.com";
+		} else {
+			document.getElementById("Emailerror").innerHTML = "";
+		}
+		
+		if (password == "") {
+			document.getElementById("passworderror").innerHTML = "Please enter password!";
+		}else{
+			document.getElementById("passworderror").innerHTML = "";
+		}
+
+		document.getElementById("demo011").innerHTML = name ;
+		document.getElementById("demo012").innerHTML = email ;
+		document.getElementById("demo013").innerHTML = password;
+	}
+
+</script>
+</body>
+
+</html>

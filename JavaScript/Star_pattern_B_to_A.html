@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Star Pattern in Javascript</title>
+</head>
+<body>
+
+	<h3>* Simple Square Star Pattern in JavaScript *</h3>
+	<p id="demo01"></p>
+	<hr>
+
+	<h3>* Simple Square Star Pattern in JavaScript *</h3>
+	<p id="demo04"></p>
+	<hr>
+
+	<h3>* Right Triangle Number Pattern *</h3>
+	<p id="demo02"></p>
+	<hr>
+
+	<h3>* Right Triangle Number Pattern *</h3>
+	<p id="demo03"></p>
+	<hr>
+
+	<h3>* Number Pyramid Pattern *</h3>
+	<p id="demo05"></p>
+	<hr>
+
+	<h3>* Hollow Triangle Star Pattern *</h3>
+	<p id="demo06"></p>
+	<hr>
+
+	<h3>* Inverse Triangle Pyramid *</h3>
+	<p id="demo07"></p>
+	<hr>
+
+	<h3>* Inverse Triangle Pyramid *</h3>
+	<p id="demo08"></p>
+	<hr>
+
+<script>
+	// demo01
+	let na = 7;
+	let string01 = "";
+	for (let ia = 1; ia <= na; ia++){
+		for (let ja = 0; ja < na; ja++){
+			string01 += " *";
+		}
+		string01 += "<br>";
+	}
+	document.getElementById("demo01").innerHTML = string01;
+
+	// demo04 
+	let nb = 7;
+	let string04 = "";
+	for (let ib = 1; ib <= nb; ib++){
+		// for (let jb = 0; jb < nb - ib; jb++){
+		for (let jb = 0; jb < ib; jb++){
+			string04 += " *";
+		}
+		string04 += "<br>";
+	}
+	document.getElementById("demo04").innerHTML = string04
+
+	// demo02
+	let rows = 5;
+	let pattern = "";
+	for (let n = 1; n <= rows; n++){
+		for (let num = 1;num <= n; num++){
+			pattern += num;
+		}
+		pattern += "<br>";
+	}
+	document.getElementById("demo02").innerHTML = pattern;
+
+	// demo03
+	let row = 5;
+	let pattern01 = "";
+	for (let nb = 1; nb < row; nb++){
+		for (let num01 = 1;num01 <=  row - nb; num01++){
+			pattern01 += nb;
+		}	
+		pattern01 += "<br>";
+	}
+	document.getElementById("demo03").innerHTML = pattern01;
+
+	// demo05
+	let rows05 = 6;
+	let pattern05 = "";
+	for (let nc = 1; nc < rows05; nc++){
+		for (let space = 1; space <= rows05 - nc; space++){
+			pattern05 += " &nbsp; ";
+		}
+		for (let num05 = 1; num05 <= 2 * nc - 1; num05++) {
+			pattern05 += num05;
+		}
+		pattern05 += "<br>";
+	}
+	document.getElementById("demo05").innerHTML = pattern05;
+
+	// demo06
+	let rows06 = 5;
+	let pattern06 = "";
+	for (let nd = 1; nd <= rows06; nd++){
+		for (let num06 = 1; num06 <= nd; num06++){
+			if (num06 === 1 || num06 === nd ||
+			 nd === rows06)
+				pattern06 += "*";
+			else{
+				pattern06 += " &nbsp;";	
+			}
+		}
+		pattern06 += "<br>"
+	}
+	document.getElementById("demo06").innerHTML = pattern06;
+
+	// demo07
+	let rows07 = 5;
+	let pattern07 = "";
+
+	for (let ne = 1; ne <= rows07; ne++){
+		for (let num07 = 1; num07 <= ne ;num07++){
+			pattern07 += " *";
+		}
+		pattern07 += "<br>";
+	}
+	for (let ne = 1; ne <= rows07; ne++){
+		for (let num07 = 1; num07 <= rows07 - ne; num07++){
+			pattern07 += " *";
+		}
+		pattern07 += "<br>";
+	}
+	document.getElementById("demo07").innerHTML = pattern07;
+
+	// demo08
+	// ******
+	// *****
+	// ****
+	// ***
+	// **
+	// *
+	// *
+	// **
+	// ***
+	// ****
+	// *****
+	// ******
+
+
+	let rows08 = 5;
+	pattern08 = "";
+	for (let num08 = 1; num08 <= rows08; num08++){
+		for(let nf = 1; nf <= rows08 - num08; nf++){
+			pattern08 += " *";
+		}
+		pattern08 += "<br>"
+	}
+	for (let num08 = 1; num08 <= rows08; num08++){
+		for(let nf = 1; nf <= num08; nf++){
+			pattern08 += " *";
+		}
+		pattern08 += "<br>"
+	}
+	document.getElementById("demo08").innerHTML = pattern08;
+
+</script>
+</body>
+</html>
